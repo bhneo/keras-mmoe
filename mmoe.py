@@ -6,10 +6,11 @@ Licensed under the MIT License (see LICENSE for details)
 Written by Alvin Deng
 """
 
-from keras import backend as K
-from keras import activations, initializers, regularizers, constraints
-from keras.engine.topology import Layer, InputSpec
+from tensorflow.keras import backend as K
+from tensorflow.keras import activations, initializers, regularizers, constraints
+from tensorflow.keras.layers import Layer, InputSpec
 import tensorflow as tf
+
 
 class MMoE(Layer):
     """

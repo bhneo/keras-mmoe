@@ -11,12 +11,12 @@ import random
 import pandas as pd
 import numpy as np
 import tensorflow as tf
-from keras import backend as K
-from keras import metrics
-from keras.optimizers import Adam
-from keras.initializers import VarianceScaling
-from keras.layers import Input, Dense
-from keras.models import Model
+from tensorflow.keras import backend as K
+from tensorflow.keras import metrics
+from tensorflow.keras.optimizers import Adam
+from tensorflow.keras.initializers import VarianceScaling
+from tensorflow.keras.layers import Input, Dense
+from tensorflow.keras.models import Model
 
 from mmoe import MMoE
 
