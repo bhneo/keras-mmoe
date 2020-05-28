@@ -122,7 +122,7 @@ class MMoE(Layer):
             shape=(input_dimension, self.units, self.num_experts),
             initializer=self.expert_kernel_initializer,
             regularizer=self.expert_kernel_regularizer,
-            constraint=self.expert_kernel_constraint,
+            #onstraint=self.expert_kernel_constraint,
         )
 
         # Initialize expert bias (number of units per expert * number of experts)
