@@ -31,7 +31,7 @@ np.random.seed(SEED)
 random.seed(SEED)
 
 # Fix TensorFlow graph-level seed for reproducibility
-tf.random.set_seed(SEED)
+#tf.random.set_seed(SEED)
 #tf_session = tf.Session(graph=tf.get_default_graph())
 #K.set_session(tf_session)
 
