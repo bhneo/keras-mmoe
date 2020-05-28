@@ -114,7 +114,7 @@ class MMoE(Layer):
         """
         assert input_shape is not None and len(input_shape) >= 2
 
-        input_dimension = input_shape[-1]
+        input_dimension = int(input_shape[-1])
 
         # Initialize expert weights (number of input features * number of units per expert * number of experts)
         self.expert_kernels = self.add_weight(
@@ -122,7 +122,7 @@ class MMoE(Layer):
             shape=(input_dimension, self.units, self.num_experts),
             initializer=self.expert_kernel_initializer,
             regularizer=self.expert_kernel_regularizer,
-            #onstraint=self.expert_kernel_constraint,
+            constraint=self.expert_kernel_constraint,
         )
 
         # Initialize expert bias (number of units per expert * number of experts)
